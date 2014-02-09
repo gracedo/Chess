@@ -26,7 +26,7 @@ class Board
           white = !white
         else
           if white
-            col.nil? ? print("   ".on_blue) : print(" #{col.icon} ".on_blue)
+            col.nil? ? print("   ".on_green) : print(" #{col.icon} ".on_green)
             white = !white
           else
             col.nil? ? print("   ") : print(" #{col.icon} ")

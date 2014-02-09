@@ -16,8 +16,8 @@ class Game
   attr_accessor :board, :player1, :player2, :curr_player
   def initialize
     @board = Board.new
-    @player1 = HumanPlayer.new(:white, @board)
-    @player2 = HumanPlayer.new(:black, @board)
+    @player1 = ComputerPlayer.new(:white, @board)
+    @player2 = ComputerPlayer.new(:black, @board)
     @curr_player = @player1
     @piece_to_move = nil
   end
